@@ -1,4 +1,4 @@
-# Sistem Manajemen Perlengkapan dan Produk Makeup💄✨🛍️
+# Sistem Manajemen Perlengkapan dan Produk Makeup💄💅🛍️
 
 ## Deskripsi Singkat
 Sistem Manajemen Produk Makeup adalah program yang berbasis Java. Program ini digunakan untuk mengelola data koleksi produk makeup untuk pemakaian pribadi. Program ini menerapkan konsep Pemrograman Berorientasi Objek (PBO) dan memiliki fitur CRUD (Create, Read, Update, dan Delete) untuk menambah, menampilkan, mengubah, dan menghapus data produk makeup.
@@ -99,3 +99,15 @@ Data produk yang dikelola meliputi:
 
   Pada menu utama, program dilengkapi penanganan input agar tidak mudah *error* saat pengguna salah memilih opsi. Pada gambar terlihat ketika pengguna memasukkan angka di luar jangkauan (`7`) ataupun karakter huruf (`A`), sistem mengeksekusi bagian `default` dengan memunculkan pesan *"Pilihan tidak valid, masukkan angka 1 sampai 5."*, lalu menampilkan kembali daftar menu utama agar pengguna bisa menginputkan opsi yang benar.  
 
+## Penjelasan Letak Penerapan Nilai Tambah
+**1. Menerapkan Access Modifier**
+
+  Penerapan access modifier terdapat pada file model/ProdukMakeup.java, di mana seluruh variabel seperti id, nama, merk, harga, dan stok dibuat menggunakan kata kunci private. Hal ini dilakukan agar data produk tidak bisa diakses atau diubah langsung secara sembarangan dari luar class, melainkan harus lewat aturan khusus di dalam program.
+
+**2. Encapsulation.**
+
+  Penerapan enkapsulasi dilakukan dengan menyediakan metode getter dan setter di dalam file model/ProdukMakeup.java sebagai jembatan untuk mengelola variabel yang di-private. Penerapan nyatanya terlihat pada file service/MakeupService.java, tepatnya di method ubahProduk() saat memperbarui nama, merk, harga, dan stok menggunakan setter, serta pada method hapusProduk() saat memanggil nama barang dengan getter getNama() untuk ditampilkan ke layar.
+
+**3. Validasi Input.**
+
+  Validasi input diterapkan di dalam file service/MakeupService.java, terutama pada method tambahProduk() dan ubahProduk(). Program memeriksa agar ID tidak kembar lewat bantuan cariIndexById(), menolak inputan kosong, menggunakan try-catch (NumberFormatException) agar program tidak crash saat kolom harga atau stok diisi huruf, memastikan harga dan stok bernilai lebih dari nol, serta memberikan jatah maksimal tiga kali kesempatan sebelum otomatis dibatalkan ke menu utama.
