@@ -25,17 +25,17 @@ Data produk yang dikelola meliputi:
   (Contoh: `2`, `3` (pcs)).
 
 ## Alur Program
-1. **Program dijalankan melalui file Main.java.**
+**1. Program dijalankan melalui file Main.java.**
    
   <img width="179" height="110" alt="image" src="https://github.com/user-attachments/assets/9f8f10e2-8077-4eac-9093-df61873f75d8" />
 
-2. **Program menampilkan menu utama Sistem Manajemen Makeup.**
+**2. Program menampilkan menu utama Sistem Manajemen Makeup.**
 
   <img width="175" height="116" alt="image" src="https://github.com/user-attachments/assets/497365e6-0a14-4f51-8a04-e73fbfe08a52" />
 
   Pengguna memilih menu yang diinginkan dengan mengetik pilihan menu dari angka 1 sampai 5.
   
-3. **Jika memilih Menu 1 (Tambah Produk), pengguna diminta memasukkan data produk baru.**
+**3. Jika memilih Menu 1 (Tambah Produk), pengguna diminta memasukkan data produk baru.**
 
   <img width="261" height="120" alt="image" src="https://github.com/user-attachments/assets/b6266ada-68c5-41c0-bb65-de36f568f755" />
 
