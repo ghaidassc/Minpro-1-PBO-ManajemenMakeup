@@ -19,8 +19,8 @@ public class MakeupService {
 
     public MakeupService() {
         daftarProduk = new ArrayList<>();
-        daftarProduk.add(new ProdukMakeup("MK01", "Superstay Matte Ink", "Maybelline", 125000, 15));
-        daftarProduk.add(new ProdukMakeup("MK02", "Colorfit Velvet Lip", "Wardah", 65000, 20));
+        daftarProduk.add(new ProdukMakeup("MK01", "Superstay Matte Ink", "Maybelline", 125000, 2));
+        daftarProduk.add(new ProdukMakeup("MK02", "Colorfit Velvet Lip", "Wardah", 65000, 3));
     }
 
     public void tambahProduk() {
